@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Log-in Imam Ali High school</title>
+</head>
+
+<body>
+    <div class="p-0 m-0 container-fluid">
+
+        <div class="left-side">
+            <a href="/index.html"> <img class="logo" src="/img/logo.png" alt=""
+                    srcset=""></a>
+
+            <div class="login-form">
+                <span class="span1">
+                    <label class="user-name-lable" data-118="username">Username <h6 style="color: #be1e1e ;margin: 5px ;font-size: 15px;">*
+                        </h6></label>
+
+                    <input class="user-name-input" id="user-name-input" type="text">
+                    <label id="message1"></label>
+                
+
+
+                    <label class="password-lable" data-118="passowrd">password <h6 style="color: #be1e1e;margin: 5px ;font-size: 15px;">*
+                        </h6></label>
+                    <div class="pas-eye">
+                        <input class="pasword-input" id="pass" type="password"value="" >
+                        
+                        <div class="eye">
+                            <i class="fas fa-eye" id="univisible" style="color: #000000;"></i>
+                            <i class="fa-solid fa-eye-low-vision" id="invisible"></i>
+                            
+                        </div>
+                          
+                    </div> 
+                    <label id="message"></label>
+                  
+                
+                 
+                    <button class="login-button"  data-118="login" onclick="clicked()" ><a href="#">login</a> </button>
+                    <a href="/resestpassword"  class="forget-password" data-118="forget">Forget the password?</a>
+                   
+                </span>
+  
+            </div>
+
+  <div class="languge">
+
+<button class="en"  value="en" data-118="english" ><img id="img1" src="data:image/png;base64,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" alt="" srcset="" >   English</button>
+    <button class="ar" value="ar" data-118="arbic"><img id="img2"   src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/1200px-Flag_of_Iraq.svg.png?20221130134748" alt="" srcset="">Arabic</button>
+   
+    </div>
+
+
+
+
+
+        </div>
+
+        <div class="right-side">
+           
+<label class="right-side-label">The Best High School In The<b>World</b> </label>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="js.js">
+
+
+
+
+    </script>
+</body>
+
+</html>
