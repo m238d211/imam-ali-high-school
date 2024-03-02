@@ -14,79 +14,86 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <div class="loader" id="loader"></div>
   <header>
+   
     <div class="background-image">
     </div>
     <div class="header-content">
-      <h1 class="animated-text">Welcome to Al-Imam Ali High School</h1>
+      <h1 class="animated-text" id="header">Welcome to Al-Imam Ali High School</h1>
       <button>
-        <a href="/log-in/test.html">Join Now</a>
+        <a href="/test.html" id="join">Join Now</a>
       </button>
+       <div class="language-selector">
+      <select id="language-select">
+        <option value="english">English</option>
+        <option value="arabic">العربية</option>
+      </select>
+    </div>
 
     </div>
 
 
-
-    <div class="user-name">Name</div>
+    <div class="user-name">Name</div> 
+   
     <nav>
       <button class="fas fa-bars hamburger" onclick="toggleMenu()"> </button>
       <ul>
+    
         <li><a href="#" id="menu">Home</a></li>
         <li><a href="#" id="About">About</a></li>
         <li><a href="#" id="contact">Contact</a></li>
       </ul>
+     
+  
     </nav>
+  
   </header>
 
   <main>
 
+    
     <div class="content" id="aboutus">
-      <h2><a class="a" href="" target="_blank" rel="link">Who Are We ?</a></h2>
-      <p>Imam Ali High School stands as a witness to the educational victory. Located at the heart of our community, it
+      <h2><a class="a" href="" target="_blank" rel="link" id="a1">Who Are We ?</a></h2>
+      <p id="p1">Imam Ali High School stands as a witness to the educational victory. Located at the heart of our community, it
         radiates success in every aspect. Despite its humble beginnings, Imam Ali High School has risen to remarkable
         heights, producing outstanding scholars year after year.
-
         What distinguishes Imam Ali High School is its unwavering dedication to student growth and achievement. Through
         a variety of academic programs and extracurricular activities, students are empowered to explore their passions
         and unleash their full potential. The school's faculty and support staff provide personalized instruction,
         ensuring each student receives the attention and encouragement they need to succeed.
-
         Furthermore, Imam Ali High School’s commitment to community service and social responsibility instills the
         values of compassion and empathy in its students, enhancing a culture of giving and making a positive impact.
-
         At its core, Sunset High School embodies excellence, shaping future leaders and inspiring generations to come.
       </p>
     </div>
     <div class="content">
-      <h2><a class="a" href="">What Is Our Idea About success?</a></h2>
-      <p>
+      <h2><a class="a" href=""  id="a2">What Is Our Idea About success?</a></h2>
+      <p id="p2">
 
         Imam Ali High School, located within a vibrant community, embodies educational achievement. With an emphasis on
         all-round growth, it enables students to explore interests and talents. Dedicated faculty provide personalized
         support, ensuring every student thrives academically and personally.
-
         Through innovative teaching methods and a diverse curriculum, Imam Ali High School fosters experienced
         individuals who are prepared for success. In addition to the academic aspect, the high school instills the
         values of community participation and social responsibility, with an emphasis on the importance of giving.
-
         In essence, Imam Ali High School is more than just a high school; It catalyzes dreams, shapes future leaders,
         and inspires positive change.</p>
     </div>
     <div class="content">
-      <h2><a class="a" href="">What Is Our plan ?</a></h2>
-      <p>Vision Statement:
+      <h2><a class="a" href="" id="a3">What Is Our plan ?</a></h2>
+      <p id="p3">Vision Statement:
         Al-Imam Ali High School envisions a learning environment where every student achieves academic excellence,
-        personal growth, and contributes positively to society.
-
-        Mission Statement:
+        personal growth, and contributes positively to society.Mission Statement:
         Our mission is to provide a nurturing and inclusive educational experience that fosters critical thinking,
-        creativity, and social responsibility, empowering students to become lifelong learners and compassionate
-        leaders.</p>
+        creativity, and social responsibility, empowering students to become lifelong learners and compassionate leaders.</p>
     </div>
 
   </main>
@@ -94,10 +101,9 @@
   <div class="manager-card">
     <img src="img/المدير.png" alt="Manager Image" class="manager-image">
     <div class="manager-details">
-        <h2 class="manager-name">Ali Mohemmed Saleh</h2>
-        <p class="manager-lorem">
-      
-  Director of Imam Ali Secondary School, who held the position from 2015 until the present day, where because of
+        <h2 class="manager-name" id="mn">Ali Mohemmed Saleh</h2>
+        <p class="manager-lorem" id="mp">
+        Director of Imam Ali Secondary School, who held the position from 2015 until the present day, where because of
         him, Imam Ali became one of the best preparatory schools in Iraq and Babil Governorate in particular..Since the
         arrival of Mr. Ali Muhammad Saleh and to this day, Imam Ali Preparatory School has won first place four times
         and second place once, as it competed with University Preparatory School for this position.
@@ -113,7 +119,7 @@
 
 
   <div class="slider">
-    <label class="h1-best">Some Of Our Teachers</label>
+    <label class="h1-best"  id="s">Some Of Our Teachers</label>
     <!-- Slide 1 -->
     <div class="slider-item">
       <img src="img/حيدلا.png" alt="Photo 1">

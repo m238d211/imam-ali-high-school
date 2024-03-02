@@ -2,8 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-
     background-color: #ececec;
+
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 header {
@@ -14,6 +18,44 @@ header {
 
 
 }
+/* languge */
+
+  .language-selector {
+    margin-top: 10px;
+    z-index: 99999;
+    display: flex;
+ justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+  
+  }
+  
+  #language-select {
+
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    padding: 10px 20px;
+    border: 1px solid #ffae00;
+    border-radius: 5px;
+    background-color: transparent; 
+    font-size: 20px;
+    
+    cursor: pointer;
+    color: #000000;
+    box-shadow:  0 8px 20px rgba(252, 149, 4, 0.611);
+    text-align: center;
+
+  }
+  
+  #language-select:focus {
+    outline: none;
+  }
+    
 
 /* styles.css */
 
@@ -76,6 +118,7 @@ main {
     /* Improved line spacing for better readability */
     margin-top: 20px;
     /* Increased spacing between title and content */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 a.a {
@@ -167,7 +210,9 @@ nav {
     /* Ensure nav is above the background image */
     display: flex;
     justify-content: center;
+
 }
+
 
 nav ul {
     list-style-type: none;
@@ -188,16 +233,23 @@ button a {
     color: rgb(0, 0, 0);
     background-color: #c47600d5;
 
+
+
 }
 
 button {
+    
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     color: rgb(246, 188, 188);
     text-decoration: none;
     font-size: 25px;
     border: none;
     background: none;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+
+ 
     cursor: pointer;
 }
 
@@ -254,6 +306,9 @@ nav ul li a:hover {
         align-items: center;
         justify-content: center;
         color: #0e0d0d;
+    }
+    #language-select{
+        color:#e0e0e0 ;
     }
 
     nav {
@@ -521,12 +576,23 @@ footer a {
         max-height: 350px;
     }
 
-    .h1-best {
-        font-size: 20px;
+    #s.h1-best {
+        font-size: 30px;
         display: flex;
         justify-content: space-around;
         align-items: baseline;
     }
+    .manager-card{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .manager-card .manager-name{
+        text-align: center;
+        color: #6b24ce;
+        font-size: 30px;
+        padding: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -537,7 +603,7 @@ footer a {
     }
 
     .h1-best {
-        font-size: 20px;
+  
         display: flex;
         justify-content: space-around;
         align-items: baseline;
@@ -566,12 +632,12 @@ footer a {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
 .manager-image {
-    width: 150px;
+    width: 250px;
     /* Adjust image width */
     height: auto;
     border-radius: 5%;
